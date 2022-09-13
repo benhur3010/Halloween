@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evento Halloween</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,400;0,700;1,400;1,700&family=Butcherman&family=Creepster&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <h1>Agende seu Evento Halloween</h1>
+        <p>
+          Chegou a hora de marcar aquela festa Halloween com seu amigos. Bora
+          lá?
+        </p>
+        <img
+          src="images/image-halloween.jpg"
+          alt="Imagem de abóboras sombrias em cima de uma mesa com um fundo pegando fogo"
+        />
+      </header>
+
+      <form id="my-form">
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>INFORMAÇÕES PESSOAIS</legend>
+            <div class="first-wrapper">
+              <div class="input-wrapper">
+                <label for="event-name">Nome</label>
+                <input type="text" id="event-name" required />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="event-lastname">Sobrenome</label>
+                <input type="text" id="event-lastname" required />
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-email">E-mail</label>
+              <input type="email" id="event-email" required />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>INFORMAÇÕES DO EVENTO</legend>
+            <div class="second-wrapper">
+              <div class="input-wrapper">
+                <label for="event-spot">Escolha o Local do Evento</label>
+                <select id="event-spot">
+                  <option value="select">Selecione</option>
+                  <option value="smigol">Casa do Smigol</option>
+                  <option value="hogwarts">Hogwarts</option>
+                  <option value="platform-3/4">Plataforma 3/4</option>
+                  <option value="salem">Salém</option>
+                </select>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="event-decoration">Escolha a Temática</label>
+                <select id="event-decoration">
+                  <option value="select">Selecione</option>
+                  <option value="harry-potter">Harry Potter</option>
+                  <option value="sabrina">O Mundo Sombrio de Sabrina</option>
+                  <option value="jack">Jack Lanterna</option>
+                  <option value="bride">A Noiva Cadáver</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="third-wrapper">
+              <div class="input-wrapper">
+                <label for="event-drink">Escolha a Bebida a ser Servida</label>
+                <select id="event-drink">
+                  <option value="select">Selecione</option>
+                  <option value="beer">Cerveja Amantegada</option>
+                  <option value="hydromel">Hidromel</option>
+                  <option value="punch">Ponche</option>
+                  <option value="juice-pumpkin">Suco de Abóbora</option>
+                </select>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="event-decoration">Escolha a Comida</label>
+                <select id="event-decoration">
+                  <option value="select">Selecione</option>
+                  <option value="pumpkin-pie">Torta de Abóbora</option>
+                  <option value="mummy">Enroladinho de Múmia</option>
+                  <option value="noodle">Macarrão de Monstro</option>
+                  <option value="hot-dog">Cachorro-quente Sangrento</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>
+              Gostaria de fazer algum pedido especial? Conta pra Gente!!!
+            </legend>
+            <div class="extra-information">
+              <textarea></textarea>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="event-information">
+            <legend>INFORME A DATA E HORÁRIO DO EVENTO</legend>
+          </div>
+
+          <div class="col-3">
+            <div class="input-wrapper">
+              <label for="event-date">Data</label>
+              <input type="date" id="event-date" required />
+            </div>
+            <div class="input-wrapper">
+              <label for="event-begin">Das</label>
+              <input type="time" id="event-begin" required />
+            </div>
+            <div class="input-wrapper">
+              <label for="event-end">Até</label>
+              <input type="time" id="event-end" required />
+            </div>
+          </div>
+        </fieldset>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="event-private" required />
+          <label for="event-private"
+            >Atesto que estou preparado para a maior festa Halloween de todos os
+            tempos!</label
+          >
+        </div>
+      </form>
+
+      <footer>
+        <input class="button" type="submit" form="my-form" value="ENVIAR" />
+      </footer>
+    </div>
+  </body>
+</html>
